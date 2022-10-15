@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block body %}
+<div class="mx-auto" style="width: 200px;">
+<form method="POST">
+  {% csrf_token %}
+  {{f.as_p}}
+  <button type="submit">confirm</button>
+</form>
+</div>
+{% endblock %}
